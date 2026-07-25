@@ -1,0 +1,83 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(135deg, #ecfdf5, #f0fdf4);
+  border: 1px solid #bbf7d0;
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+}
+
+.hero h3 {
+  margin: 0 0 0.35rem;
+}
+
+.hero p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.cta {
+  background: #16a34a;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--shadow);
+}
+
+.card span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+}
+
+.card strong {
+  font-size: 1.35rem;
+}
+
+.next {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.25rem;
+}
+
+.next h4 {
+  margin: 0 0 0.75rem;
+}
+
+.next ul {
+  margin: 0;
+  padding-right: 1.25rem;
+  color: var(--muted);
+}
+
+.next li + li {
+  margin-top: 0.35rem;
+}

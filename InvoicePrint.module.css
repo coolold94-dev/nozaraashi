@@ -1,0 +1,171 @@
+.printArea {
+  display: block;
+  max-width: 900px;
+  margin: 1.5rem auto;
+  padding: 1.25rem 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+  color: #111827;
+  font-family: inherit;
+}
+
+@media print {
+  :global(body *) {
+    visibility: hidden;
+  }
+
+  .printArea,
+  .printArea * {
+    visibility: visible;
+  }
+
+  .printArea {
+    display: block;
+    position: absolute;
+    inset: 0;
+    padding: 12mm;
+    background: white;
+    color: black;
+    font-size: 12px;
+    box-shadow: none;
+    border: none;
+  }
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.55rem;
+  letter-spacing: 0.02em;
+}
+
+.meta {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 180px;
+}
+
+.meta strong {
+  font-size: 1rem;
+}
+
+.header p {
+  margin: 0.2rem 0 0;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.meta {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.customer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  gap: 1rem;
+}
+
+.customer span {
+  min-width: 120px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.item {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.85rem;
+  background: #fbfbfb;
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #111827;
+}
+
+.itemHeader strong {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.itemDetails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem 1rem;
+  margin-top: 0.35rem;
+  font-size: 0.87rem;
+  color: #4b5563;
+}
+
+.itemDetails span {
+  min-width: 6rem;
+  text-align: right;
+}
+
+.itemDetails span:last-child {
+  font-weight: 600;
+  color: #111827;
+}
+
+.totals {
+  border-top: 1px dashed #ccc;
+  padding-top: 0.75rem;
+}
+
+.totals > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+  font-size: 0.95rem;
+}
+
+.totals > div strong {
+  font-weight: 700;
+}
+
+.totals .discount {
+  color: #b91c1c;
+}
+
+.grand {
+  font-weight: 800;
+  font-size: 1.15rem;
+  margin: 0.35rem 0;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 1rem;
+  color: #666;
+  font-size: 0.85rem;
+}

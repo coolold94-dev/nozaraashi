@@ -1,0 +1,71 @@
+.page {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header h3 {
+  margin: 0;
+}
+
+.header p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.card span {
+  display: block;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.card strong {
+  display: block;
+  font-size: 1.35rem;
+}
+
+.section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.note {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.primary {
+  background: var(--primary);
+}

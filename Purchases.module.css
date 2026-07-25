@@ -1,0 +1,223 @@
+.page {
+  display: grid;
+  gap: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.header h3 {
+  margin: 0;
+}
+
+.header p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.topBar {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.selectBlock {
+  flex: 1;
+  min-width: 220px;
+}
+
+.totals {
+  display: grid;
+  gap: 0.5rem;
+  min-width: 220px;
+}
+
+.totalValue {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.bodyGrid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 1rem;
+}
+
+.catalog,
+.cart {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.search {
+  padding: 1rem;
+}
+
+.productGrid {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.productCard {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  padding: 1rem;
+  text-align: right;
+  display: grid;
+  gap: 0.45rem;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.productCard:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary);
+}
+
+.productPrice {
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.cartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.lines {
+  padding: 0.75rem 1rem;
+  overflow: auto;
+}
+
+.line {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.lineInfo {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 0.7rem;
+}
+
+.lineActions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.qtyInput {
+  width: 62px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.55rem;
+  text-align: center;
+}
+
+.removeBtn {
+  border: none;
+  background: #fef2f2;
+  color: #b91c1c;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.summary {
+  padding: 1rem;
+  border-top: 1px solid var(--border);
+  display: grid;
+  gap: 0.9rem;
+}
+
+.paymentTabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+  background: var(--bg);
+  padding: 0.3rem;
+  border-radius: var(--radius-sm);
+}
+
+.tab,
+.tabActive {
+  border: none;
+  background: transparent;
+  padding: 0.75rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.tabActive {
+  background: #ecfdf5;
+  color: var(--primary-dark);
+}
+
+.error {
+  background: #fef2f2;
+  color: #b91c1c;
+  padding: 0.85rem;
+  border-radius: var(--radius-sm);
+}
+
+.pickerUnits {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.unitBtn,
+.unitActive {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem;
+  text-align: right;
+}
+
+.unitActive {
+  border-color: var(--primary);
+  background: #ecfdf5;
+}
+
+@media (max-width: 980px) {
+  .bodyGrid,
+  .topBar {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    gap: 0.75rem;
+  }
+}

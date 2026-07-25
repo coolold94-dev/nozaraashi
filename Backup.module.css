@@ -1,0 +1,45 @@
+.page {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  max-width: 640px;
+}
+
+.page h3 {
+  margin: 0 0 0.5rem;
+}
+
+.page p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.actions button,
+.importBtn {
+  border: none;
+  background: #16a34a;
+  color: white;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.importBtn {
+  display: inline-block;
+}
+
+.message {
+  margin-top: 1rem;
+  color: #16a34a;
+  font-weight: 600;
+}

@@ -1,0 +1,26 @@
+.page {
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.page h3 {
+  margin: 0 0 0.5rem;
+}
+
+.page p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #fef9c3;
+  color: #854d0e;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
